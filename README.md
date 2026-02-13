@@ -29,7 +29,7 @@ This is a starter template for building a SaaS application using **Next.js** wit
 ```bash
 git clone https://github.com/nextjs/saas-starter
 cd saas-starter
-pnpm install
+bun install
 ```
 
 ## Running Locally
@@ -43,14 +43,14 @@ stripe login
 Use the included setup script to create your `.env` file:
 
 ```bash
-pnpm db:setup
+bun run db:setup
 ```
 
 Run the database migrations and seed the database with a default user and team:
 
 ```bash
-pnpm db:migrate
-pnpm db:seed
+bun run db:migrate
+bun run db:seed
 ```
 
 This will create the following user and team:
@@ -63,7 +63,7 @@ You can also create new users through the `/sign-up` route.
 Finally, run the Next.js development server:
 
 ```bash
-pnpm dev
+bun run dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) in your browser to see the app in action.
